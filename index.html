@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline Custom CSS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=FontName:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <style>
+      
+        body {
+            font-family: 'jaro', sans-serif;
+        }
+
+    
+    #home {
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: radial-gradient(circle, #b3b0bb, #f9d275, #fad374, #b2a4be, #b1bdbb, #fad376);
+        color: #2b2b2b;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); 
+    }
+
+   
+    #home h1 {
+    font-size: 15rem;
+    font-weight: bold;
+    color: #000000; 
+}
+
+#home p {
+    font-size: 3.5rem; 
+    font-style: italic;
+    color: #000000; 
+}
+
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        
+        .navbar {
+            font-family: 'jaro', sans-serif;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            font-weight: normal;
+        }
+
+       
+        body {
+            background:radial-gradient(circle, #b3b0bb, #f9d275, #fad374, #b2a4be, #b1bdbb, #fad376);
+
+            min-height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000000;
+        }
+
+        
+        section {
+            padding: 60px 0;
+        }
+
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+        }
+
+        
+        #about .row {
+    display: flex;
+    align-items: flex-start; 
+}
+
+#about .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#about {
+    padding: 40px 0; 
+}
+
+#about h2 {
+    margin-bottom: 15px; 
+}
+
+#about p {
+    margin-bottom: 15px; 
+}
+
+        </style>
+
+        <style>
+    
+    #home {
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: radial-gradient(circle, #b3b0bb, #f9d275, #fad374, #b2a4be, #b1bdbb, #fad376);
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #about {
+        background-color: #f8f9fa; 
+        padding: 60px 0;}
+</style>
+<style>
+        
+        #skills {
+            padding: 50px 0;
+
+
+        }
+
+        #skills h2 {
+    color: #000000; 
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+
+#skills p {
+    margin-top: 0; 
+    margin-bottom: 30px; 
+    font-size: 1rem; 
+    text-align: center;
+}
+
+        .skill-circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px; 
+    border: 4px solid #681f41; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+
+.skill-circle img {
+    max-width: 80%; 
+    height: auto;
+}
+
+.skill-name {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #681f41; 
+    text-transform: capitalize;}
+
+
+
+        
+#portfolio {
+    padding: 50px 0;
+    background-color: #000000; 
+    color: white;
+}
+
+#portfolio h2 {
+    color: white; 
+}
+
+#portfolio p {
+    color: white;
+}
+       
+        #contact {
+            padding: 50px 0;
+        }
+
+        
+        footer {
+            background-color: #000000;
+            color: #fff;
+            font-size:larger;
+        }
+
+        .btn-primary {
+            background-color: #681f41;
+            border-color: #681f41;
+        }
+
+        .btn-primary:hover {
+            background-color: #9b357b;
+            border-color: #9b357b;
+        }
+    </style>
+
+    
+<style>
+   #about {
+    background-color: #000000; 
+    color: white; 
+    padding: 60px 0; 
+}
+
+
+#about h2, #about h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#about .about-text,
+#about .education-text {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: justify;
+}
+
+#about .education-text {
+    margin-bottom: 5px;
+}
+
+
+#about p {
+    color: white; 
+    text-align: justify; 
+}
+
+#about p, #about h2, #about h3 {
+    color: white;
+}
+
+    .about-img-container img {
+        width: 100%; 
+        height: auto;
+        border-radius: 15px; 
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    }
+
+    #about .col-md-6 {
+        display: flex;
+        align-items: center; 
+    }
+
+    .education h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.education .education-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;  
+}
+
+    
+    .d-flex {
+        height: 100%;
+    }
+
+    .d-flex p {
+        flex-grow: 1;
+    }
+
+    
+    .text-justify {
+        text-align: justify;
+    }
+
+   
+    #about h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+   
+#contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
+}
+
+
+.contact-icon-circle {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.contact-icon {
+    width: 20px;  
+    height: 20px;
+    object-fit: contain;
+}
+
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ms-3 {
+    margin-left: 1rem;
+}
+
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+            #home h1 {
+                font-size: 8vw; 
+            }
+
+            #home p {
+                font-size: 4vw;
+            }
+
+            #about img {
+                max-height: 300px;
+            }
+
+            .skill-circle {
+                width: 80px;
+                height: 80px;
+            }
+
+            .skill-name {
+                font-size: 0.9rem;
+            } 
+
+        }
+
+
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <h1>Tanaya Sule</h1>
+            <p>Portfolio 2024</p>
+        </div>
+    </section>
+
+    
+    <!-- About Me Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Me Image -->
+            <div class="col-md-6">
+                <img src="img/profile-img-for-webpage.jpeg" class="img-fluid rounded-rectangle" alt="Your Photo" style="max-height: 600px; object-fit: cover;">
+            </div>
+
+            <!-- About Me Text -->
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p class="about-text">I am a second-year Communication Design student with a passion for crafting visual experiences that resonate. 
+                    My work spans book design, social media graphics, brochures, branding, and packaging, where I strive to blend 
+                    creativity and strategy to tell compelling stories. As a budding designer, I’m constantly exploring new techniques 
+                    and ideas to create designs that are not only visually striking but also meaningful.</p>
+
+                <p class="about-text">In addition to honing my design skills, I have developed a keen interest in user experience (UX) design, understanding how form and 
+                    function can work together to create intuitive and impactful products. I am particularly drawn to the challenge of simplifying complex 
+                    ideas into clear, visually appealing designs that can communicate messages effectively to a wide range of audiences.</p>
+
+                <p class="about-text">I am committed to constantly learning and evolving as a designer, staying updated with the latest design trends, tools, and technologies. 
+                    My goal is not only to produce designs that are aesthetically pleasing but also to ensure they serve a purpose—whether it’s driving a brand’s identity, 
+                    enhancing user experiences, or telling a story that connects with the audience on a deeper level. I look forward to expanding my portfolio with exciting new projects that challenge me creatively and help me grow professionally.</p>
+
+                <!-- Education Section -->
+                <h3>Education</h3>
+                <p class="education-text">2020- 2021: D.A.V. Public School, Thane</p>
+                <p class="education-text">2022- 2023: Smt.Sulochanadevi Singhania School, Thane</p>
+                <p class="education-text">2023 - 2027: Atlas Skilltech University</p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+    
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Skills</h2>
+            <p class="text-center">Here are some of the skills I have developed:</p>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="skill-circle">
+                        <img src="img/photoshop.png" alt="Adobe Photoshop" class="img-fluid">
+                    </div>
+                    <p class="skill-name">Adobe Photoshop</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-circle">
+                        <img src="img/illustrator.png" alt="Adobe Illustrator" class="img-fluid">
+                    </div>
+                    <p class="skill-name">Adobe Illustrator</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-circle">
+                        <img src="img/indesign.png" alt="Adobe Indesign" class="img-fluid">
+                    </div>
+                    <p class="skill-name">Adobe Indesign</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="skill-circle">
+                        <img src="img/premiere-pro.png" alt="Adobe Premiere Pro" class="img-fluid">
+                    </div>
+                    <p class="skill-name">Adobe Premiere Pro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+  <!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="text-center">My Work</h2>
+        <p class="text-center">Check out some of my projects below:</p>
+        <div class="row justify-content-center">
+            <!-- Top Row: 3 Cards -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/book-des-webpage.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <a href="https://www.behance.net/nilendrasule" target="_blank" class="btn btn-primary w-100">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/pizza box for webp.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <a href="https://www.behance.net/gallery/212124787/Vinnies-Pizza-Pizza-Box-Design" target="_blank" class="btn btn-primary w-100">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/brochure for webp-min.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <a href="https://www.behance.net/gallery/207914567/Food-Beverage-Brochure" target="_blank" class="btn btn-primary w-100">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Bottom Row: 2 Cards -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/cookie-package-for-website.png" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <a href="https://www.behance.net/gallery/211787885/The-Milky-Way-Product-Packaging" target="_blank" class="btn btn-primary w-100">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/glossary cover.jpeg" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <a href="https://www.behance.net/nilendrasule" target="_blank" class="btn btn-primary w-100">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Feel free to reach out!</p>
+        <div class="row justify-content-center text-center">
+            <!-- Contact Number -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center contact-item">
+                    <div class="contact-icon-circle">
+                        <img src="img/phone-call.png" alt="Phone" class="contact-icon">
+                    </div>
+                    <p class="ms-3 mb-0">+91 9082600458</p>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center contact-item">
+                    <div class="contact-icon-circle">
+                        <img src="img/email.png" alt="Email" class="contact-icon">
+                    </div>
+                    <p class="ms-3 mb-0">tanayasule2005@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center contact-item">
+                    <div class="contact-icon-circle">
+                        <img src="img/pin.png" alt="Location" class="contact-icon">
+                    </div>
+                    <p class="ms-3 mb-0">Mumbai, Maharashtra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>ThankYou!</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
